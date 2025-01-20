@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: burlywood;
+}
+ul li a:link,
+ul li a:visited {
+  padding: 12px 20px;
+  border-radius: 30px;
+  background-color: #43693e;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul li a:hover,
+ul li a:active {
+  background-color: #42812e;
+}
+
+.article {
+  margin: 1rem;
+  background-color: #cee08d;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.header {
+  margin-top: 1rem;
+  text-align: center;
+}
+.links {
+  margin: 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+.copy {
+  text-align: center;
+}
+.mail:hover,
+.mail:active {
+  background-color: #8a2828;
+}
+.mail {
+  padding: 5px 10px;
+  border-radius: 30px;
+  background-color: #a73f3f;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.video {
+  margin: 1rem;
+}
+.audio {
+  float: right;
+  margin: 1rem;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow X Example</title>
+    <style>
+      body {
+        background-color: rgb(135, 175, 175);
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        width: 200px;
+        height: 100px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        overflow-x: visible;
+      }
+
+      .content {
+        width: 400px;
+        height: 100px;
+        background-color: lightblue;
+      }
+
+      .hidden {
+        overflow-x: hidden;
+      }
+
+      .scroll {
+        overflow-x: scroll;
+      }
+
+      .auto {
+        overflow-x: auto;
+      }
+
+      .nav {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">Overflow visible (default)</div>
+    </div>
+
+    <div class="container hidden">
+      <div class="content">Overflow hidden</div>
+    </div>
+
+    <div class="container scroll">
+      <div class="content">Overflow scroll</div>
+    </div>
+
+    <div class="container auto">
+      <div class="content">Overflow auto</div>
+    </div>
+
+    <div class="nav">
+      <a href="overflowY.html">Go to Overflow Y HTML</a>
+    </div>
+  </body>
+</html>

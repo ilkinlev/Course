@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.mainContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.peopleImg {
+  flex: 1;
+  background-image: linear-gradient(#1889c8, #1360a2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.peopleImg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.formContainer {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo img {
+  width: 153px;
+  height: 76px;
+  margin-bottom: 120px;
+}
+
+.text {
+  font-family: "Inter";
+  font-size: 30px;
+  margin: 20px 0;
+  color: #333;
+}
+
+input[type="email"] {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  width: 381px;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #f4f4f4;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+button {
+  font-family: "Poppins", serif;
+  display: block;
+  margin: 0 auto;
+  width: 407px;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #1780c0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.loginLink {
+  margin-top: 130px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.loginLink a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.loginLink a:hover {
+  text-decoration: underline;
+}

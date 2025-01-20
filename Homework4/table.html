@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          display: block;
+          text-align: center;
+      }
+
+      table {
+          width: 80%;
+          border-collapse: collapse;
+          margin: 50px auto;
+          background-color: white;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      th, td {
+          padding: 10px;
+          border: 1px solid rgb(221, 221, 221);
+          text-align: center;
+      }
+
+      th {
+          background-color: rgb(64, 167, 43);
+          color: rgb(51, 51, 51);
+      }
+
+      tfoot {
+          background-color: rgb(64, 167, 43);
+          font-weight: bold;
+      }
+
+      tr:nth-child(even) {
+          background-color: rgb(249, 249, 249);
+      }
+
+      tr:hover {
+          background-color: rgb(234, 234, 234);
+      }
+  </style>
+  </head>
+  <body>
+    <header class="header">
+      <ul>
+        <li class="links"><a href="index.html">Home</a></li>
+      </ul>
+    </header>
+    <main>    
+      <table>
+      <thead>
+          <tr>
+              <th>No</th>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Quantity</th>
+              <th>Manat</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td>Milk</td>
+              <td>Dairy</td>
+              <td>2</td>
+              <td>2.50</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Bread</td>
+              <td>Bakery</td>
+              <td>1</td>
+              <td>1.20</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Eggs</td>
+              <td>Grocery</td>
+              <td>1</td>
+              <td>3.00</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Apple</td>
+              <td>Fruit</td>
+              <td>3</td>
+              <td>4.50</td>
+          </tr>
+          <tr>
+              <td>5</td>
+              <td>Chicken</td>
+              <td>Meat</td>
+              <td>2</td>
+              <td>7.50</td>
+          </tr>
+          <tr>
+              <td>6</td>
+              <td>Rice</td>
+              <td>Grocery</td>
+              <td>2</td>
+              <td>5.80</td>
+          </tr>
+          <tr>
+              <td>7</td>
+              <td>Carrot</td>
+              <td>Vegetable</td>
+              <td>4</td>
+              <td>1.60</td>
+          </tr>
+          <tfoot>
+              <tr>
+                  <td colspan="4">Total Amount</td>
+                  <td>26.10</td>
+              </tr>
+          </tfoot>
+      </tbody>
+  </table></main>
+    <footer>
+      <p class="copy">&copy;Copyright 2023 Playground</p>
+      <p class="copy">
+        <a href="mailto:arcrutus007@gmail.com" class="mail">Contact us!</a>
+      </p>
+    </footer>
+  </body>
+</html>
+
+ 
