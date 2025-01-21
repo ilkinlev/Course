@@ -18,7 +18,7 @@ body {
   .leftSide{
    width: 50%;
 
-      .macrocodeLogo{
+    .macrocodeLogo{
       align-self: start;
       margin: 35px 0 0 100px;
       width: auto;
@@ -40,11 +40,102 @@ body {
     background-color: #1780C0;
       .loginContent{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         text-align: center;
         max-width: 525px;
-        background-color: white;
+        background-color: #ffffff;
+        margin: 150px 149px;
+          .mainText{
+            margin-top: 30px;
+          }
       }
- 
+      .googleBtn{
+        font-family: "Poppins", serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 407px;
+        border:1px solid #D9D9D9;
+        border-radius: 8px;
+        background:none;
+        padding: 10px;
+        gap: 10px;
+        margin: 0 auto;
+        cursor: pointer;
+      }
+      .dummyText{
+        margin-top: 13px;
+        margin-bottom: 64px;
+      }
+      .divider{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        gap: 22px;
+      }
+      .line{
+        flex: 1;
+        height: 1px;
+        background-color: #BFBFBF;
+
+      }
+      .lineText{
+        color: #BFBFBF;
+      }
+      .loginForm{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .emailInput{
+          font-family: "Poppins", serif;
+          width: 100%;
+          border: none;
+          background:none;
+          outline: none;
+          background-color: #F4F4F4;
+        }
+        .emailInput::placeholder{
+          color: #BFBFBF;
+        }
+        .passwordInput{
+          font-family: "Poppins", serif;
+          width: 100%;
+          border: none;
+          background:none;
+          outline: none;
+          background-color: #F4F4F4;
+        }
+        .passwordInput::placeholder{
+          color: #BFBFBF;
+        }
+        .eyeImg{
+          width: 24px;
+          height: 24px;
+        }
+        .lockImg{
+          width: 24px;
+          height: 24px;
+        }
+        .checkBox{
+          font-family: "Poppins", serif;
+          color: #979797;
+          display: flex;
+          gap: 8px;
+        }
+        .forgotText{
+          font-family: "Poppins", serif;
+          display: flex;
+          color: #979797;
+          justify-content: right;
+        }
+        .forgotText a{
+          text-decoration: none;
+        }
+      }
   }
 }
