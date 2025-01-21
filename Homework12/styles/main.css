@@ -88,15 +88,31 @@ body {
 .mainContainer .rightSide .loginForm {
   display: flex;
   flex-direction: column;
+  padding: 30px 59px;
   gap: 15px;
 }
+.mainContainer .rightSide .loginForm .emailInputWrapper {
+  background-color: #F4F4F4;
+  max-width: 407px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 20px;
+}
+.mainContainer .rightSide .loginForm .passwordInputWrapper {
+  background-color: #F4F4F4;
+  max-width: 407px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 20px;
+}
 .mainContainer .rightSide .loginForm .emailInput {
-  font-family: "Poppins", serif;
   width: 100%;
+  font-family: "Poppins", serif;
   border: none;
   background: none;
   outline: none;
-  background-color: #F4F4F4;
 }
 .mainContainer .rightSide .loginForm .emailInput::-moz-placeholder {
   color: #BFBFBF;
@@ -105,12 +121,11 @@ body {
   color: #BFBFBF;
 }
 .mainContainer .rightSide .loginForm .passwordInput {
-  font-family: "Poppins", serif;
   width: 100%;
+  font-family: "Poppins", serif;
   border: none;
   background: none;
   outline: none;
-  background-color: #F4F4F4;
 }
 .mainContainer .rightSide .loginForm .passwordInput::-moz-placeholder {
   color: #BFBFBF;
@@ -126,18 +141,22 @@ body {
   width: 24px;
   height: 24px;
 }
-.mainContainer .rightSide .loginForm .checkBox {
+.mainContainer .rightSide .forgotText {
   font-family: "Poppins", serif;
-  color: #979797;
+  display: flex;
+  color: #0094FF;
+  text-decoration: none;
+  justify-content: right;
+  margin-right: 59px;
+}
+.mainContainer .rightSide .forgotText a {
+  color: #0094FF;
+  text-decoration: none;
+}
+.mainContainer .rightSide .checkBox {
   display: flex;
   gap: 8px;
-}
-.mainContainer .rightSide .loginForm .forgotText {
-  font-family: "Poppins", serif;
-  display: flex;
   color: #979797;
-  justify-content: right;
-}
-.mainContainer .rightSide .loginForm .forgotText a {
-  text-decoration: none;
+  justify-content: left;
+  margin-left: 59px;
 }/*# sourceMappingURL=main.css.map */

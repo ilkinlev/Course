@@ -89,26 +89,40 @@ body {
       .loginForm{
         display: flex;
         flex-direction: column;
+        padding: 30px 59px;
         gap: 15px;
-
+        .emailInputWrapper{
+          background-color: #F4F4F4;
+          max-width: 407px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 9px 20px;
+        }
+        .passwordInputWrapper{
+          background-color: #F4F4F4;
+          max-width: 407px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 9px 20px;
+        }
         .emailInput{
-          font-family: "Poppins", serif;
           width: 100%;
+          font-family: "Poppins", serif;
           border: none;
           background:none;
           outline: none;
-          background-color: #F4F4F4;
         }
         .emailInput::placeholder{
           color: #BFBFBF;
         }
         .passwordInput{
-          font-family: "Poppins", serif;
           width: 100%;
+          font-family: "Poppins", serif;
           border: none;
           background:none;
           outline: none;
-          background-color: #F4F4F4;
         }
         .passwordInput::placeholder{
           color: #BFBFBF;
@@ -121,21 +135,25 @@ body {
           width: 24px;
           height: 24px;
         }
-        .checkBox{
-          font-family: "Poppins", serif;
-          color: #979797;
-          display: flex;
-          gap: 8px;
-        }
-        .forgotText{
-          font-family: "Poppins", serif;
-          display: flex;
-          color: #979797;
-          justify-content: right;
-        }
-        .forgotText a{
-          text-decoration: none;
-        }
+      }
+      .forgotText{
+        font-family: "Poppins", serif;
+        display: flex;
+        color: #0094FF;
+        text-decoration: none;
+        justify-content: right;
+        margin-right: 59px;
+      }
+      .forgotText a{
+        color: #0094FF;
+        text-decoration: none;
+      }
+      .checkBox{
+        display: flex;
+        gap: 8px;
+        color: #979797;
+        justify-content: left;
+        margin-left: 59px;
       }
   }
 }
