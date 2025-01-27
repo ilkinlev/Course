@@ -12,14 +12,37 @@ html, body {
 
 header {
   width: 100%;
+  height: 100vh;
 }
-header .navContent {
+header nav {
   display: flex;
-  max-width: 1440px;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav .leftSide {
+  display: flex;
   width: 100%;
+}
+header nav .leftSide .mainLogo {
+  margin: 18px 0 0 144px;
+}
+header nav .rightSide {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
   align-items: center;
 }
-header .navContent span {
+header nav .uploadBtn {
+  width: 100%;
+  max-width: 222px;
+  background-color: #202025;
+  border-radius: 8px;
+  border-style: none;
+  cursor: pointer;
+  padding: 12px 36px;
+  text-align: center;
+}
+header nav .uploadBtn span {
   text-transform: uppercase;
   font-weight: bold;
   font-weight: 800;
@@ -27,46 +50,16 @@ header .navContent span {
   line-height: 24px;
   color: #F7FBFA;
 }
-header .navContent .logoContent {
-  width: 100%;
+header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 64px;
 }
-header .navContent .divider {
-  margin-right: 32px;
-  width: 100%;
-  max-width: 1px;
-}
-header .navContent .mainLogo {
-  position: absolute;
-  top: 28px;
-  left: 144px;
-}
-header .navContent .navLinks li, header .navContent a {
+header nav ul li a {
   text-decoration: none;
-  list-style: none;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 12px;
   line-height: 24px;
   color: #202025;
-}
-header .navContent .uploadBtn {
-  background-color: #202025;
-  border-radius: 8px;
-  border-style: none;
-  cursor: pointer;
-  padding: 12px 36px;
-  text-align: center;
-  gap: 12px;
-}
-header .navContent .rightSide {
-  width: 100%;
-  height: 100%;
-  max-width: 1210px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .navContent .rightSide .navLinks {
-  display: flex;
-  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
