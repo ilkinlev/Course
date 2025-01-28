@@ -149,7 +149,6 @@ header {
   margin: 75px 10px;
   margin-bottom: 0;
   text-align: center;
-  flex: 4;
   transition: ease-out 0.5s;
 }
 
@@ -205,22 +204,24 @@ Header .filler{
 }
 
 
-.HeaderButton{
+.headerButton{
 margin-bottom: 75px;
 }
-header button { 
+.headerCard button { 
   display: block;
   font-size: 8pt;
   background-color: black;
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
-  width: 100%;
+  border-radius: 8px;
+  max-width: 327px;
+  width: 327px;
   height: 50px;
   white-space: nowrap;
   font-weight: bold;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* Main */
@@ -271,6 +272,8 @@ main {
   padding: 10px 25px;
   cursor: pointer;
   transition: ease-out 0.3s;
+  border: none;
+  font-weight: 800;
 }
 main i{
   color: #686A6C;
@@ -317,9 +320,9 @@ main hr{
   margin-bottom: 25px;
 }
 
-.mainRow1,
-.mainRow2,
-.mainRow3 {
+.mainRow,
+.mainRowNd,
+.mainRowRd {
   background-color: white;
 }
 
@@ -457,18 +460,44 @@ footer span{
     margin-left: 16px;
   }
   .userImg{
-    margin-left: 260px;
+    max-width: 24px;
+    width: 100%;
+    margin-left: 115px;
+    margin-bottom: 16px;
   }
   .dataCards{
     display: none;
   }
   .headerDate{
-    max-width: 375px;
+    max-width: 327px;
     width: 100%;
   }
-  .headerCard div{
-    
+
+  Header .filler{
     display: flex;
-    gap: 32px;
+    flex:0;
+    margin-right: 24px;
+    margin-left: 24px;
+    justify-content: center;
+  }
+  .mainRow{
+  display: flex;
+  flex-direction: column;
+  }
+  .mainRowNd,
+  .mainRowRd{
+    display: none;
+  }
+  .mainCard{
+    display: flex;
+    flex-direction: column;
+  }
+  .avatarName span{
+    margin-left: 76px;
+  }
+  .mainTitle{
+    max-width: 181px;
+    width: 100%;
+    display: block;
   }
 }
