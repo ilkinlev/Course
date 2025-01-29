@@ -15,8 +15,8 @@
     <nav>
         <ul>
             <li class="burgerMenu"><img src="img/burgermenu.svg" alt="burgermenu"></li>
-            <div class="mainLogo"><a href="#"><img src="img/MilliNet.svg"></a></div>
-            <li style="margin-left: 400px;"><a href="#"><span class="headerText">xəbərlər</span></a></li>
+            <div class="mainLogo"><img src="img/MilliNet.svg"></div>
+            <li class="divider"><a href="#"><span class="headerText">xəbərlər</span></a></li>
             <li><a href="#"><span class="headerText">mükafat</span></a></li>
             <li><a href="#"><span class="headerText">yarışma</span></a></li>
             <li><a href="#"><span class="headerText">haqqımızda</span></a></li>
@@ -27,7 +27,7 @@
     <header>
         <div class="background">
             <header class="max-width">
-                <div>
+                <div class="mainContainer">
                     <div class="flex-container dataCards">
                         <section class="headerCard">
                             <div style="background: conic-gradient(from 180deg at 50% 50%, #5FFF5C -18.66deg, #FFE249 22.23deg, #F35950 78.14deg, #7C5BFF 159deg, #1CE4FF 202.32deg, #5FFF5C 341.34deg, #FFE249 382.23deg);">
@@ -106,10 +106,10 @@
         <main class="max-width">
             <div class="mainList">
                 <ul class="flex-container">
-                    <li class="mainTitle" style="padding-left: 0;"><a href="#">Layihələr</li>
-                    <li style="margin-left: 150px;"><a href="#"><button>Son yüklənənlər <img src="img/arrow.svg" alt="arrow" class="arrowBtn"></button></a></li>
-                    <li><a href="#"><button>Ən çox bəyəni alan <img src="img/arrow.svg" alt="arrow" class="arrowBtn"></button></a></li>
-                    <li><a href="#"><button>Bütün <img src="img/arrow.svg" alt="arrow" class="arrowBtn"></button></a></li>
+                    <li class="mainTitle" style="padding-left: 0;"><span>Layihələr</span></li>
+                    <li style="margin-left: 150px;"><button>Son yüklənənlər <img src="img/arrow.svg" alt="arrow" class="arrowBtn"></button><hr></li>
+                    <li><button>Ən çox bəyəni alan <img src="img/arrow.svg" alt="arrow" class="arrowBtn"></button><hr></li>
+                    <li class="mobileAll"><button>Bütün<img src="img/arrow.svg" alt="arrow" class="arrowBtn"></button><hr></li>
                 </ul>
             </div>
             <div class="mainRow flex-container">
@@ -247,11 +247,11 @@
         </main>
         <footer>
             <div class="footerContact max-width flex-container">
-                <div class="footerCol1">
+                <div class="footerCol">
                     <div class="footerLogo"><img src="img/MilliNet.svg"></div>
                     <span class="footerText">MilliNet Azərbaycan İnternet Forumu tərəfindən təsis edilən peşəkar internet mükafatıdır</span>
                 </div>
-                <div class="footerCol2">
+                <div class="footerColNd">
                     <ul class="">
                         <li class="footerTitle" style="margin-bottom: 50px;"><a href="#"><span class="footerTextSpan">MilliNet</span></li>
                         <li><a href="#">Mükafat haqqında</a></li>
@@ -262,7 +262,7 @@
                         <li><a href="#">Tez-tez soruşulan suallar</a></li>
                     </ul>
                 </div>
-                <div class="footerCol3">
+                <div class="footerColRd">
                     <ul class="">
                         <li class="footerTitle" style="margin-bottom: 50px;"><a href="#"><span class="footerTextSpan">Yarışma - Media</span></li>
                         <li><a href="#">Qeydiyyat</a></li>
@@ -273,7 +273,7 @@
                         <li><a href="#">Arxiv</a></li>
                     </ul>
                 </div>
-                <div class="footerCol4">
+                <div class="footerColTh">
                     <ul class="">
                         <li class="footerTitle" style="margin-bottom: 50px;"><span class="footerTextSpan"><a href="#">Əlaqə</span></li>
                         <li><a href="#">

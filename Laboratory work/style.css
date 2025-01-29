@@ -120,12 +120,14 @@ nav ul li a:hover {
 .userImg{
   margin-left: 40px;
 }
+.divider{
+  margin-left:230px;
+}
 /* Header */
 
 header {
   position: relative;
   color: black;
-  font-family: system-ui;
 }
 .headerText{
   text-transform: uppercase;
@@ -256,7 +258,7 @@ main {
 .arrowBtn{
   margin-left: 24px;
 }
-.mainTitle a{
+.mainTitle span{
   font-size: 48pt;
   padding-left: 0;
   font-weight: bold;
@@ -386,11 +388,11 @@ footer ul li{
   color : #686A6C;
 }
 
-.footerCol1 {
+.FooterCol {
   flex: 2;
 }
 
-.footerCol2, .footerCol3, .footerCol4{
+.FooterColNd, .FooterColRd, .FooterColTh{
   flex: 1;
   margin-right: 30px;
 }
@@ -444,6 +446,19 @@ footer span{
   display: inline;
 }
 @media screen and (max-width: 599px) {
+  .nav{
+    max-width: 799px;
+    width: 100%;
+  }
+  .background{
+    max-width: 599px;
+    width: 190%;
+  }
+  .mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .burgerMenu{
     display: block;
   }
@@ -462,7 +477,7 @@ footer span{
   .userImg{
     max-width: 24px;
     width: 100%;
-    margin-left: 115px;
+    margin-left: 270px;
     margin-bottom: 16px;
   }
   .dataCards{
@@ -480,12 +495,13 @@ footer span{
     margin-left: 24px;
     justify-content: center;
   }
-  .mainRow{
+  .mainRowNd,
+  .mainRowRd
+  {
   display: flex;
   flex-direction: column;
   }
-  .mainRowNd,
-  .mainRowRd{
+  .mainRow{
     display: none;
   }
   .mainCard{
@@ -498,6 +514,37 @@ footer span{
   .mainTitle{
     max-width: 181px;
     width: 100%;
+    margin-left: 24px;
     display: block;
+  }
+  .mainTitle span{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  .mobileAll{
+    max-width: 589px;
+    display: block;
+    width: 100%;
+  }
+  .arrowBtn img{
+    margin-left: 465px;
+  }
+  .flex-container{
+    flex-direction: column;
+  }
+  .footerMedia{
+    margin-left: 0;
+  }
+  .footerContact{
+    margin-top: 40px;
+    margin-left: 24px;
+  }
+  .footerText{
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .FooterColNd, .FooterColRd{
+    display: flex;
   }
 }
