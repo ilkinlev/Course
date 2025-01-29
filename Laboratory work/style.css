@@ -337,6 +337,7 @@ main hr{
 .seeMore button{
   background-color: white;
   border: black 2px solid;
+  border-radius: 4px;
   color: black;
   font-weight: bold;
   font-size: 10pt;
@@ -359,13 +360,14 @@ footer a{
   color: black;
 }
 .footerTitle{
+  margin-bottom: 50px;
   font-weight: bold;
 }
 .footerImg{
   margin-right: 8px;
 }
 .footerText{
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   margin-top: 20px;
   color:#686A6C
@@ -392,6 +394,17 @@ footer ul li{
   flex: 2;
 }
 
+.footerColNd{
+  margin-right: 20px;
+}
+
+.footerColRd{
+  margin-right: 20px;
+}
+
+.FooterColTh{
+  margin-right: 20px;
+}
 .FooterColNd, .FooterColRd, .FooterColTh{
   flex: 1;
   margin-right: 30px;
@@ -445,7 +458,34 @@ footer span{
   font-size: 20pt;
   display: inline;
 }
+
+.mobileSocial{
+  display: none;
+}
 @media screen and (max-width: 599px) {
+  footer{
+    color: #F7FBFA;
+  }
+  ul{
+    max-width: 375px;
+  }
+  .topHeader li{
+    display: none;
+  }
+  main hr{
+    margin-left: 25px;
+    margin-bottom: 16px;
+  }
+  Header .filler{
+    display: flex;
+    flex:0;
+    margin-right: 24px;
+    margin-left: 24px;
+    justify-content: center;
+  }
+  .mobileView{
+    display: none;
+  }
   .nav{
     max-width: 799px;
     width: 100%;
@@ -461,12 +501,8 @@ footer span{
   }
   .burgerMenu{
     display: block;
-  }
-  ul{
-    max-width: 375px;
-  }
-  li{
-    display: none;
+    margin-bottom: 24px;
+    margin-left: 24px;
   }
   .uploadBtn{
     display: none;
@@ -477,7 +513,7 @@ footer span{
   .userImg{
     max-width: 24px;
     width: 100%;
-    margin-left: 270px;
+    margin-left: 230px;
     margin-bottom: 16px;
   }
   .dataCards{
@@ -486,14 +522,6 @@ footer span{
   .headerDate{
     max-width: 327px;
     width: 100%;
-  }
-
-  Header .filler{
-    display: flex;
-    flex:0;
-    margin-right: 24px;
-    margin-left: 24px;
-    justify-content: center;
   }
   .mainRowNd,
   .mainRowRd
@@ -505,11 +533,21 @@ footer span{
     display: none;
   }
   .mainCard{
+    max-width: 327px;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
+  .avatar{
+    margin-left: 24px;
+  }
+  .avatarName{
+    display: flex;
+    align-items: center;
+  }
   .avatarName span{
     margin-left: 76px;
+    margin-bottom: 16px;
   }
   .mainTitle{
     max-width: 181px;
@@ -522,10 +560,28 @@ footer span{
     line-height: 40px;
     font-weight: bold;
   }
+  .mainCardTitle{
+    margin-left: 24px;
+  }
+  .mainCardText{
+    margin-left: 24px;
+  }
   .mobileAll{
     max-width: 589px;
     display: block;
     width: 100%;
+  }
+  .seeMore button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 213px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .seeMoreWrap{
+    margin-top: 80px;
+    margin-left: 0;
   }
   .arrowBtn img{
     margin-left: 465px;
@@ -537,6 +593,9 @@ footer span{
     margin-left: 0;
   }
   .footerContact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 40px;
     margin-left: 24px;
   }
@@ -544,7 +603,33 @@ footer span{
     font-size: 20px;
     line-height: 32px;
   }
+  .footerCol{
+    margin-bottom: 32px;
+  }
   .FooterColNd, .FooterColRd{
     display: flex;
+  }
+  .footerTitle{
+    margin-bottom: 32px;
+  }
+  .Copyright{
+    display: none;
+  }
+  .mobileSocial{
+    display: inline;
+    max-width: 327px;
+    width: 100%;
+    margin-left: 24px;
+  }
+  .socialText{
+    font-size: 12px;
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+    text-indent: 17%;
+    letter-spacing: 2px;
+  }
+  .mobileNone{
+    display: none;
   }
 }

@@ -13,8 +13,8 @@
 
 <body>
     <nav>
-        <ul>
-            <li class="burgerMenu"><img src="img/burgermenu.svg" alt="burgermenu"></li>
+        <ul class="topHeader">
+            <img class="burgerMenu" src="img/burgermenu.svg" alt="burgermenu">
             <div class="mainLogo"><img src="img/MilliNet.svg"></div>
             <li class="divider"><a href="#"><span class="headerText">xəbərlər</span></a></li>
             <li><a href="#"><span class="headerText">mükafat</span></a></li>
@@ -88,7 +88,6 @@
                                 <span class="headerTitleTimer">10</span>
                                 <span class="headerTitleDate">saniye</span>
                             </div>
-
                         </section>
                         <div class="filler"></div>
                     </div>
@@ -107,8 +106,8 @@
             <div class="mainList">
                 <ul class="flex-container">
                     <li class="mainTitle" style="padding-left: 0;"><span>Layihələr</span></li>
-                    <li style="margin-left: 150px;"><button>Son yüklənənlər <img src="img/arrow.svg" alt="arrow" class="arrowBtn"></button><hr></li>
-                    <li><button>Ən çox bəyəni alan <img src="img/arrow.svg" alt="arrow" class="arrowBtn"></button><hr></li>
+                    <li style="margin-left: 150px;"  class="mobileView"><button>Son yüklənənlər <img src="img/arrow.svg" alt="arrow" class="arrowBtn"></button><hr></li>
+                    <li class="mobileView"><button>Ən çox bəyəni alan <img src="img/arrow.svg" alt="arrow" class="arrowBtn"></button><hr></li>
                     <li class="mobileAll"><button>Bütün<img src="img/arrow.svg" alt="arrow" class="arrowBtn"></button><hr></li>
                 </ul>
             </div>
@@ -243,7 +242,7 @@
                 <div class="seeMore"><button>DAHA ÇOX GÖSTƏR</button></div>
                 <div class="filler"></div>
             </div>
-            <hr>
+            <hr class="seeMoreWrap">
         </main>
         <footer>
             <div class="footerContact max-width flex-container">
@@ -253,7 +252,7 @@
                 </div>
                 <div class="footerColNd">
                     <ul class="">
-                        <li class="footerTitle" style="margin-bottom: 50px;"><a href="#"><span class="footerTextSpan">MilliNet</span></li>
+                        <li class="footerTitle"><a href="#"><span class="footerTextSpan">MilliNet</span></li>
                         <li><a href="#">Mükafat haqqında</a></li>
                         <li><a href="#">Qaydalar</a></li>
                         <li><a href="#">Təşkilatçılar</a></li>
@@ -264,7 +263,7 @@
                 </div>
                 <div class="footerColRd">
                     <ul class="">
-                        <li class="footerTitle" style="margin-bottom: 50px;"><a href="#"><span class="footerTextSpan">Yarışma - Media</span></li>
+                        <li class="footerTitle"><a href="#"><span class="footerTextSpan">Yarışma - Media</span></li>
                         <li><a href="#">Qeydiyyat</a></li>
                         <li><a href="#">Nominantlar</a></li>
                         <li><a href="#">Qaliblər</a></li>
@@ -275,7 +274,7 @@
                 </div>
                 <div class="footerColTh">
                     <ul class="">
-                        <li class="footerTitle" style="margin-bottom: 50px;"><span class="footerTextSpan"><a href="#">Əlaqə</span></li>
+                        <li class="footerTitle"><span class="footerTextSpan"><a href="#">Əlaqə</span></li>
                         <li><a href="#">
                             <span><img src="img/locations.svg" alt="locationImg" class="footerImg">Mustafa Topçubaşov k, 23/1. AZ 1022. Bakı, Azərbaycan</span>
                         </a></li>
@@ -289,7 +288,7 @@
                     </ul>
                 </div>
             </div>
-            <hr class="max-width" style="margin-top: 50px;">
+            <hr class="max-width mobileNone" style="margin-top: 50px;">
             <div class="Copyright max-width">
                 <div class="CopyrightText">
                     MilliNet © 2023. Bütün hüquqlar qorunur
@@ -300,7 +299,19 @@
                     <a href="#"><img src="img/facebook.svg" alt="facebook icon"></a>
                 </div>
             </div>
+
+                <div class="mobileSocial">
+                    <span class="socialText">Social</span>
+                    <img src="img/instagram.svg" alt="twitter icon">
+                    <img src="img/twitter.svg" alt="twitter icon">
+                    <img src="img/facebook.svg" alt="facebook icon">
+                    <hr>
+                    <div>
+                        <span>
+                            MilliNet © 2023. Bütün hüquqlar qorunur
+                        </span>
+                    </div>
+                </div>
         </footer>
 </body>
-
 </html>
