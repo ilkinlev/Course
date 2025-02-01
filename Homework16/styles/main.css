@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  width: 100%;
+  height: 100vh;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 93px;
+}
+.mainContainer .formContainer {
+  background-color: #424242;
+  min-width: 641px;
+  width: 100%;
+}
+.mainContainer .formContainer .logText {
+  font-family: "Montserrat", serif;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 700;
+}
+.mainContainer .formContainer .formHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContainer .formContainer .formHeader .createText a {
+  font-family: "Open Sans", serif;
+  text-decoration: none;
+  color: #C5CAE9;
+}
+.mainContainer .formContainer .socialLinks {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContainer .formContainer .socialLinks .facebookBtn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #5856D6;
+  border-radius: 38px;
+  border: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 8px 29px;
+}
+.mainContainer .formContainer .socialLinks .twitterBtn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #00BCD4;
+  border-radius: 38px;
+  border: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 8px 29px;
+}
+.mainContainer .formContainer .socialLinks .googleBtn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #D84226;
+  border-radius: 38px;
+  border: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 8px 29px;
+}
+.mainContainer .formContainer .contentWrapper {
+  display: flex;
+  background-color: #424242;
+  justify-content: center;
+  align-items: center;
+  gap: 5.5px;
+  color: rgba(255, 255, 255, 0.5411764706);
+  font-family: "Open Sans", serif;
+}
+.mainContainer .formContainer .contentWrapper .wrapper {
+  background-color: #FFFFFF;
+  max-width: 67px;
+  flex: 1;
+  height: 1px;
+}
+.mainContainer .formContainer .usrInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
