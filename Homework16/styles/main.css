@@ -17,14 +17,33 @@ html body {
 }
 .mainContainer .leftSide {
   display: flex;
+  background-color: #e91e63;
+  color: #ffffff;
+  font-family: "Montserrat", serif;
 }
-.mainContainer .leftSide .leftSideContainer {
+.mainContainer .leftSide h1 {
+  font-size: 36px;
+  line-height: 54px;
+}
+.mainContainer .leftSide span {
+  font-size: 24px;
+  line-height: 54px;
+}
+.mainContainer .leftSideContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.mainContainer .leftSideContainer .mainLogo {
+  width: 86.93px;
+  height: 86.93px;
+}
+
+.rightSide {
   display: flex;
 }
-.mainContainer .rightSide {
-  display: flex;
-}
-.mainContainer .rightSide .formContainer {
+.rightSide .formContainer {
   border: 1px solid;
   padding: 50px;
   border-radius: 40px;
@@ -33,31 +52,31 @@ html body {
   min-width: 641px;
   width: 100%;
 }
-.mainContainer .rightSide .formContainer .logText {
+.rightSide .formContainer .logText {
   font-family: "Montserrat", serif;
   color: #ffffff;
   font-size: 36px;
   font-weight: 700;
 }
-.mainContainer .rightSide .formContainer .formHeader {
+.rightSide .formContainer .formHeader {
   display: flex;
   justify-content: space-between;
 }
-.mainContainer .rightSide .formContainer .formHeader .createText {
+.rightSide .formContainer .formHeader .createText {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.mainContainer .rightSide .formContainer .formHeader .createText a {
+.rightSide .formContainer .formHeader .createText a {
   font-family: "Open Sans", serif;
   text-decoration: none;
   color: #c5cae9;
 }
-.mainContainer .rightSide .formContainer .socialLinks {
+.rightSide .formContainer .socialLinks {
   display: flex;
   justify-content: space-between;
 }
-.mainContainer .rightSide .formContainer .socialLinks .facebookBtn {
+.rightSide .formContainer .socialLinks .facebookBtn {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -69,7 +88,7 @@ html body {
   padding: 8px 29px;
   cursor: pointer;
 }
-.mainContainer .rightSide .formContainer .socialLinks .twitterBtn {
+.rightSide .formContainer .socialLinks .twitterBtn {
   min-width: 160px;
   min-height: 42px;
   display: flex;
@@ -83,7 +102,7 @@ html body {
   padding: 8px 29px;
   cursor: pointer;
 }
-.mainContainer .rightSide .formContainer .socialLinks .googleBtn {
+.rightSide .formContainer .socialLinks .googleBtn {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -95,7 +114,7 @@ html body {
   padding: 8px 29px;
   cursor: pointer;
 }
-.mainContainer .rightSide .formContainer .contentWrapper {
+.rightSide .formContainer .contentWrapper {
   display: flex;
   background-color: #424242;
   justify-content: center;
@@ -104,39 +123,39 @@ html body {
   color: rgba(255, 255, 255, 0.5411764706);
   font-family: "Open Sans", serif;
 }
-.mainContainer .rightSide .formContainer .contentWrapper .wrapper {
+.rightSide .formContainer .contentWrapper .wrapper {
   background-color: #ffffff;
   max-width: 67px;
   flex: 1;
   height: 1px;
 }
-.mainContainer .rightSide .formContainer .usrInput {
+.rightSide .formContainer .usrInput {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.mainContainer .rightSide .formContainer .usrInput .formBottom {
+.rightSide .formContainer .usrInput .formBottom {
   font-family: "Roboto", serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.mainContainer .rightSide .formContainer .usrInput .formBottom .bottomContainer {
+.rightSide .formContainer .usrInput .formBottom .bottomContainer {
   display: flex;
   gap: 12px;
 }
-.mainContainer .rightSide .formContainer .usrInput .formBottom a {
+.rightSide .formContainer .usrInput .formBottom a {
   text-decoration: none;
   color: #c5cae9;
 }
-.mainContainer .rightSide .formContainer .usrInput .formBottom span {
+.rightSide .formContainer .usrInput .formBottom span {
   color: #ffffff;
 }
-.mainContainer .rightSide .formContainer .usrInput .formBtn {
+.rightSide .formContainer .usrInput .formBtn {
   display: flex;
   justify-content: center;
 }
-.mainContainer .rightSide .formContainer .usrInput .formBtn .submitBtn {
+.rightSide .formContainer .usrInput .formBtn .submitBtn {
   font-family: "Montserrat", serif;
   font-weight: 700;
   color: #ffffff;
