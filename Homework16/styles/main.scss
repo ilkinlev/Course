@@ -6,6 +6,10 @@
 html body {
   width: 100%;
   height: 100vh;
+  background-color: #880e4f;
+  background-image: url(../img/backgroundImg.svg);
+  background-image: url(../img/backgroundImgND.svg);
+  background-repeat: repeat-y;
 }
 
 $text-color: #ffffff;
