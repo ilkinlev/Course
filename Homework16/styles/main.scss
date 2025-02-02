@@ -15,120 +15,133 @@ $text-color: #ffffff;
   display: flex;
   justify-content: center;
   margin-top: 93px;
-  .formContainer {
-    background-color: #424242;
-    min-width: 641px;
-    width: 100%;
-    .logText {
-      font-family: "Montserrat", serif;
-      color: $text-color;
-      font-size: 36px;
-      font-weight: 700;
-    }
-    .formHeader {
+  .leftSide {
+    display: flex;
+    .leftSideContainer {
       display: flex;
-      justify-content: space-between;
-      .createText {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        a {
-          font-family: "Open Sans", serif;
-          text-decoration: none;
-          color: #c5cae9;
-        }
-      }
     }
-    .socialLinks {
-      display: flex;
-      justify-content: space-between;
-      .facebookBtn {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        background-color: #5856d6;
-        border-radius: 38px;
-        border: none;
-        text-transform: uppercase;
-        color: $text-color;
-        padding: 8px 29px;
-        cursor: pointer;
-      }
-      .twitterBtn {
-        min-width: 160px;
-        min-height: 42px;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        background-color: #00bcd4;
-        border-radius: 38px;
-        border: none;
-        text-transform: uppercase;
-        color: $text-color;
-        padding: 8px 29px;
-        cursor: pointer;
-      }
-      .googleBtn {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        background-color: #d84226;
-        border-radius: 38px;
-        border: none;
-        text-transform: uppercase;
-        color: $text-color;
-        padding: 8px 29px;
-        cursor: pointer;
-      }
-    }
-    .contentWrapper {
-      display: flex;
+  }
+  .rightSide {
+    display: flex;
+    .formContainer {
+      border: 1px solid;
+      padding: 50px;
+      border-radius: 40px;
       background-color: #424242;
-      justify-content: center;
-      align-items: center;
-      gap: 5.5px;
-      color: #ffffff8a;
-      font-family: "Open Sans", serif;
-      .wrapper {
-        background-color: #ffffff;
-        max-width: 67px;
-        flex: 1;
-        height: 1px;
-      }
-    }
-    .usrInput {
-      display: flex;
-      flex-direction: column;
+      box-shadow: 0px 3px 49px 9px #00000029;
+      min-width: 641px;
       width: 100%;
-      .formBottom {
-        font-family: "Roboto", serif;
+      .logText {
+        font-family: "Montserrat", serif;
+        color: $text-color;
+        font-size: 36px;
+        font-weight: 700;
+      }
+      .formHeader {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        .bottomContainer {
+        .createText {
           display: flex;
-          gap: 12px;
-        }
-        a {
-          text-decoration: none;
-          color: #c5cae9;
-        }
-        span {
-          color: #ffffff;
+          align-items: center;
+          gap: 8px;
+          a {
+            font-family: "Open Sans", serif;
+            text-decoration: none;
+            color: #c5cae9;
+          }
         }
       }
-      .formBtn {
+      .socialLinks {
         display: flex;
-        justify-content: center;
-        .submitBtn {
-          font-family: "Montserrat", serif;
-          font-weight: 700;
-          color: $text-color;
+        justify-content: space-between;
+        .facebookBtn {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          background-color: #5856d6;
+          border-radius: 38px;
+          border: none;
           text-transform: uppercase;
-          background-color: #304ffe;
-          border-radius: 39px;
-          min-width: 558px;
-          padding: 14px;
+          color: $text-color;
+          padding: 8px 29px;
+          cursor: pointer;
+        }
+        .twitterBtn {
+          min-width: 160px;
+          min-height: 42px;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          background-color: #00bcd4;
+          border-radius: 38px;
+          border: none;
+          text-transform: uppercase;
+          color: $text-color;
+          padding: 8px 29px;
+          cursor: pointer;
+        }
+        .googleBtn {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          background-color: #d84226;
+          border-radius: 38px;
+          border: none;
+          text-transform: uppercase;
+          color: $text-color;
+          padding: 8px 29px;
+          cursor: pointer;
+        }
+      }
+      .contentWrapper {
+        display: flex;
+        background-color: #424242;
+        justify-content: center;
+        align-items: center;
+        gap: 5.5px;
+        color: #ffffff8a;
+        font-family: "Open Sans", serif;
+        .wrapper {
+          background-color: #ffffff;
+          max-width: 67px;
+          flex: 1;
+          height: 1px;
+        }
+      }
+      .usrInput {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .formBottom {
+          font-family: "Roboto", serif;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .bottomContainer {
+            display: flex;
+            gap: 12px;
+          }
+          a {
+            text-decoration: none;
+            color: #c5cae9;
+          }
+          span {
+            color: #ffffff;
+          }
+        }
+        .formBtn {
+          display: flex;
+          justify-content: center;
+          .submitBtn {
+            font-family: "Montserrat", serif;
+            font-weight: 700;
+            color: $text-color;
+            text-transform: uppercase;
+            background-color: #304ffe;
+            border-radius: 39px;
+            min-width: 558px;
+            padding: 14px;
+          }
         }
       }
     }

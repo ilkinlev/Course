@@ -15,36 +15,49 @@ html body {
   justify-content: center;
   margin-top: 93px;
 }
-.mainContainer .formContainer {
+.mainContainer .leftSide {
+  display: flex;
+}
+.mainContainer .leftSide .leftSideContainer {
+  display: flex;
+}
+.mainContainer .rightSide {
+  display: flex;
+}
+.mainContainer .rightSide .formContainer {
+  border: 1px solid;
+  padding: 50px;
+  border-radius: 40px;
   background-color: #424242;
+  box-shadow: 0px 3px 49px 9px rgba(0, 0, 0, 0.1607843137);
   min-width: 641px;
   width: 100%;
 }
-.mainContainer .formContainer .logText {
+.mainContainer .rightSide .formContainer .logText {
   font-family: "Montserrat", serif;
   color: #ffffff;
   font-size: 36px;
   font-weight: 700;
 }
-.mainContainer .formContainer .formHeader {
+.mainContainer .rightSide .formContainer .formHeader {
   display: flex;
   justify-content: space-between;
 }
-.mainContainer .formContainer .formHeader .createText {
+.mainContainer .rightSide .formContainer .formHeader .createText {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.mainContainer .formContainer .formHeader .createText a {
+.mainContainer .rightSide .formContainer .formHeader .createText a {
   font-family: "Open Sans", serif;
   text-decoration: none;
   color: #c5cae9;
 }
-.mainContainer .formContainer .socialLinks {
+.mainContainer .rightSide .formContainer .socialLinks {
   display: flex;
   justify-content: space-between;
 }
-.mainContainer .formContainer .socialLinks .facebookBtn {
+.mainContainer .rightSide .formContainer .socialLinks .facebookBtn {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -56,7 +69,7 @@ html body {
   padding: 8px 29px;
   cursor: pointer;
 }
-.mainContainer .formContainer .socialLinks .twitterBtn {
+.mainContainer .rightSide .formContainer .socialLinks .twitterBtn {
   min-width: 160px;
   min-height: 42px;
   display: flex;
@@ -70,7 +83,7 @@ html body {
   padding: 8px 29px;
   cursor: pointer;
 }
-.mainContainer .formContainer .socialLinks .googleBtn {
+.mainContainer .rightSide .formContainer .socialLinks .googleBtn {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -82,7 +95,7 @@ html body {
   padding: 8px 29px;
   cursor: pointer;
 }
-.mainContainer .formContainer .contentWrapper {
+.mainContainer .rightSide .formContainer .contentWrapper {
   display: flex;
   background-color: #424242;
   justify-content: center;
@@ -91,39 +104,39 @@ html body {
   color: rgba(255, 255, 255, 0.5411764706);
   font-family: "Open Sans", serif;
 }
-.mainContainer .formContainer .contentWrapper .wrapper {
+.mainContainer .rightSide .formContainer .contentWrapper .wrapper {
   background-color: #ffffff;
   max-width: 67px;
   flex: 1;
   height: 1px;
 }
-.mainContainer .formContainer .usrInput {
+.mainContainer .rightSide .formContainer .usrInput {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.mainContainer .formContainer .usrInput .formBottom {
+.mainContainer .rightSide .formContainer .usrInput .formBottom {
   font-family: "Roboto", serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.mainContainer .formContainer .usrInput .formBottom .bottomContainer {
+.mainContainer .rightSide .formContainer .usrInput .formBottom .bottomContainer {
   display: flex;
   gap: 12px;
 }
-.mainContainer .formContainer .usrInput .formBottom a {
+.mainContainer .rightSide .formContainer .usrInput .formBottom a {
   text-decoration: none;
   color: #c5cae9;
 }
-.mainContainer .formContainer .usrInput .formBottom span {
+.mainContainer .rightSide .formContainer .usrInput .formBottom span {
   color: #ffffff;
 }
-.mainContainer .formContainer .usrInput .formBtn {
+.mainContainer .rightSide .formContainer .usrInput .formBtn {
   display: flex;
   justify-content: center;
 }
-.mainContainer .formContainer .usrInput .formBtn .submitBtn {
+.mainContainer .rightSide .formContainer .usrInput .formBtn .submitBtn {
   font-family: "Montserrat", serif;
   font-weight: 700;
   color: #ffffff;
