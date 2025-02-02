@@ -10,6 +10,7 @@ html body {
 }
 
 .mainContainer {
+  min-width: 1116px;
   display: flex;
   justify-content: center;
   margin-top: 93px;
@@ -21,7 +22,7 @@ html body {
 }
 .mainContainer .formContainer .logText {
   font-family: "Montserrat", serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 36px;
   font-weight: 700;
 }
@@ -29,10 +30,15 @@ html body {
   display: flex;
   justify-content: space-between;
 }
+.mainContainer .formContainer .formHeader .createText {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .mainContainer .formContainer .formHeader .createText a {
   font-family: "Open Sans", serif;
   text-decoration: none;
-  color: #C5CAE9;
+  color: #c5cae9;
 }
 .mainContainer .formContainer .socialLinks {
   display: flex;
@@ -42,34 +48,39 @@ html body {
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: #5856D6;
+  background-color: #5856d6;
   border-radius: 38px;
   border: none;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 8px 29px;
+  cursor: pointer;
 }
 .mainContainer .formContainer .socialLinks .twitterBtn {
+  min-width: 160px;
+  min-height: 42px;
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: #00BCD4;
+  background-color: #00bcd4;
   border-radius: 38px;
   border: none;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 8px 29px;
+  cursor: pointer;
 }
 .mainContainer .formContainer .socialLinks .googleBtn {
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: #D84226;
+  background-color: #d84226;
   border-radius: 38px;
   border: none;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 8px 29px;
+  cursor: pointer;
 }
 .mainContainer .formContainer .contentWrapper {
   display: flex;
@@ -81,7 +92,7 @@ html body {
   font-family: "Open Sans", serif;
 }
 .mainContainer .formContainer .contentWrapper .wrapper {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   max-width: 67px;
   flex: 1;
   height: 1px;
@@ -90,4 +101,35 @@ html body {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+.mainContainer .formContainer .usrInput .formBottom {
+  font-family: "Roboto", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContainer .formContainer .usrInput .formBottom .bottomContainer {
+  display: flex;
+  gap: 12px;
+}
+.mainContainer .formContainer .usrInput .formBottom a {
+  text-decoration: none;
+  color: #c5cae9;
+}
+.mainContainer .formContainer .usrInput .formBottom span {
+  color: #ffffff;
+}
+.mainContainer .formContainer .usrInput .formBtn {
+  display: flex;
+  justify-content: center;
+}
+.mainContainer .formContainer .usrInput .formBtn .submitBtn {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #304ffe;
+  border-radius: 39px;
+  min-width: 558px;
+  padding: 14px;
 }/*# sourceMappingURL=main.css.map */
