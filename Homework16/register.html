@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Movie</title>
+  </head>
+  <body>
+    <main class="mainContainer">
+      <div class="homeImg">
+        <img src="icons/home.svg" alt="homeIcon" />
+      </div>
+      <div class="leftSide">
+        <div class="leftSideContainer">
+          <div>
+            <img src="icons/mainlogo.svg" alt="mainLogo" class="mainLogo" />
+            <div><span>Movie</span></div>
+          </div>
+          <div>
+            <h1>Nice to meet you :)</h1>
+            <span> Just register to join with us</span>
+          </div>
+        </div>
+      </div>
+      <div class="rightSide">
+        <div class="formContainer">
+          <!-- Header terefi -->
+          <div class="formHeader">
+            <span class="logText">Register</span>
+            <span class="createText"
+              ><img src="icons/right.svg" alt="rightIcon" /><a href="index.html"
+                >Already have account?</a
+              >
+            </span>
+          </div>
+          <!-- Sosial sebekeler -->
+          <div class="socialLinks">
+            <div>
+              <button class="facebookBtn">
+                <img src="icons/facebook.svg" alt="facebooklogo" />Facebook
+              </button>
+            </div>
+            <div>
+              <button class="twitterBtn">
+                <img src="icons/twitter.svg" alt="twitterlogo" />Twitter
+              </button>
+            </div>
+            <div>
+              <button class="googleBtn">
+                <img src="icons/google.svg" alt="googlelogo" />Google
+              </button>
+            </div>
+          </div>
+          <div class="contentWrapper">
+            <div class="wrapper"></div>
+            <div><span class="wrapperText">Or register with email</span></div>
+            <div class="wrapper"></div>
+          </div>
+          <form class="usrInput">
+            <input
+              type="email"
+              name="usrEmail"
+              id="usrEmail"
+              placeholder="Email"
+              class="usrData"
+            />
+            <input
+              type="password"
+              name="usrPass"
+              id="usrPass"
+              class="usrData"
+              placeholder="Password*"
+              style="border-color: #304ffe"
+            />
+            <div class="repeatPass">
+              <input
+                type="password"
+                name="usrPass"
+                id="usrPass"
+                class="usrData"
+                placeholder="Password*"
+                style="border-color: #304ffe"
+              />
+              <input
+                type="password"
+                name="usrPass"
+                id="usrPass"
+                class="usrData"
+                placeholder="Repeat Password*"
+                style="border-color: #304ffe"
+              />
+            </div>
+
+            <div class="formBottom">
+              <div class="bottomContainer">
+                <input
+                  type="checkbox"
+                  name="rememberMe"
+                  id="rememberMe"
+                  checked
+                />
+                <span
+                  >I have read and accept the Terms of <br />
+                  <span style="color: #c5cae9">Service & Privacy Policy</span>
+                  *</span
+                >
+                <input class="registerBtn" type="button" value="contiune" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
