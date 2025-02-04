@@ -36,8 +36,8 @@
             <div><span>Movie</span></div>
           </div>
           <div>
-            <h1>Welcome back</h1>
-            <span>Please login to continue</span>
+            <h1>Nice to meet you :)</h1>
+            <span> Just register to join with us</span>
           </div>
         </div>
       </div>
@@ -45,11 +45,10 @@
         <div class="formContainer">
           <!-- Header terefi -->
           <div class="formHeader">
-            <span class="logText">Login</span>
+            <span class="logText">Register</span>
             <span class="createText"
-              ><img src="icons/right.svg" alt="rightIcon" /><a
-                href="register.html"
-                >Create new account</a
+              ><img src="icons/right.svg" alt="rightIcon" /><a href="index.html"
+                >Already have account?</a
               >
             </span>
           </div>
@@ -73,7 +72,7 @@
           </div>
           <div class="contentWrapper">
             <div class="wrapper"></div>
-            <div><span class="wrapperText">Or login with email</span></div>
+            <div><span class="wrapperText">Or register with email</span></div>
             <div class="wrapper"></div>
           </div>
           <form class="usrInput">
@@ -92,6 +91,25 @@
               placeholder="Password*"
               style="border-color: #304ffe"
             />
+            <div class="repeatPass">
+              <input
+                type="password"
+                name="usrPass"
+                id="usrPass"
+                class="usrData"
+                placeholder="Password*"
+                style="border-color: #304ffe"
+              />
+              <input
+                type="password"
+                name="usrPass"
+                id="usrPass"
+                class="usrData"
+                placeholder="Repeat Password*"
+                style="border-color: #304ffe"
+              />
+            </div>
+
             <div class="formBottom">
               <div class="bottomContainer">
                 <input
@@ -100,12 +118,13 @@
                   id="rememberMe"
                   checked
                 />
-                <span>Remember</span>
+                <span
+                  >I have read and accept the Terms of <br />
+                  <span style="color: #c5cae9">Service & Privacy Policy</span>
+                  *</span
+                >
+                <input class="registerBtn" type="button" value="contiune" />
               </div>
-              <a href="#" class="forgotTxt">Forgot Password</a>
-            </div>
-            <div class="formBtn">
-              <input class="submitBtn" type="button" value="contiune" />
             </div>
           </form>
         </div>

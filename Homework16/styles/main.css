@@ -60,6 +60,11 @@ html body {
   min-width: 641px;
   width: 100%;
 }
+.mainContainer .rightSide .formContainer .repeatPass {
+  display: flex;
+  width: 100%;
+  gap: 18px;
+}
 .mainContainer .rightSide .formContainer .logText {
   font-family: "Montserrat", serif;
   font-size: 36px;
@@ -164,6 +169,19 @@ html body {
 .mainContainer .rightSide .formContainer .usrInput .formBottom .bottomContainer {
   display: flex;
   gap: 12px;
+}
+.mainContainer .rightSide .formContainer .usrInput .formBottom .registerBtn {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #304ffe;
+  border-radius: 39px;
+  min-width: 160px;
+  max-height: 39px;
+  margin-left: 60px;
+  padding: 14px;
+  cursor: pointer;
 }
 .mainContainer .rightSide .formContainer .usrInput .formBottom a {
   text-decoration: none;
