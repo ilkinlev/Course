@@ -52,6 +52,7 @@ html body {
 .mainContainer .rightSide {
   display: flex;
   background-color: white;
+  border-radius: 0 40px 40px 0;
 }
 .mainContainer .rightSide .formContainer {
   border: 1px solid;
