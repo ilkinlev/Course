@@ -7,25 +7,29 @@
 html body {
   width: 100%;
   height: 100%;
-  background-color: #e91e63;
-  background-image: url(../img/backgroundImgND.svg);
-  background-image: url(../img/backgroundImg.svg);
+  background-image: url(../img/backgroundImg.svg), url(../img/backgroundImgBlue.svg);
+  background-position: left, right;
+  background-color: #880e4f;
   background-repeat: no-repeat;
 }
 
 .mainContainer {
-  min-width: 1116px;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 93px;
   box-shadow: 0px 3px 49px 9px rgba(0, 0, 0, 0.1607843137);
   border-radius: 40px;
 }
+.mainContainer .homeImg {
+  margin-top: 64.25px;
+}
 .mainContainer .leftSide {
   display: flex;
-  background-color: #e91e63;
   color: #ffffff;
   font-family: "Montserrat", serif;
+  margin-top: 120px;
+  margin-right: 85.5px;
 }
 .mainContainer .leftSide h1 {
   font-size: 36px;
@@ -45,42 +49,42 @@ html body {
   width: 86.93px;
   height: 86.93px;
 }
-
-.rightSide {
+.mainContainer .rightSide {
   display: flex;
   background-color: white;
 }
-.rightSide .formContainer {
+.mainContainer .rightSide .formContainer {
   border: 1px solid;
   padding: 50px;
   min-width: 641px;
   width: 100%;
 }
-.rightSide .formContainer .logText {
+.mainContainer .rightSide .formContainer .logText {
   font-family: "Montserrat", serif;
-  color: #ffffff;
   font-size: 36px;
   font-weight: 700;
 }
-.rightSide .formContainer .formHeader {
+.mainContainer .rightSide .formContainer .formHeader {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 93px;
 }
-.rightSide .formContainer .formHeader .createText {
+.mainContainer .rightSide .formContainer .formHeader .createText {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.rightSide .formContainer .formHeader .createText a {
+.mainContainer .rightSide .formContainer .formHeader .createText a {
   font-family: "Open Sans", serif;
   text-decoration: none;
   color: #c5cae9;
 }
-.rightSide .formContainer .socialLinks {
+.mainContainer .rightSide .formContainer .socialLinks {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 46px;
 }
-.rightSide .formContainer .socialLinks .facebookBtn {
+.mainContainer .rightSide .formContainer .socialLinks .facebookBtn {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -92,7 +96,7 @@ html body {
   padding: 8px 29px;
   cursor: pointer;
 }
-.rightSide .formContainer .socialLinks .twitterBtn {
+.mainContainer .rightSide .formContainer .socialLinks .twitterBtn {
   min-width: 160px;
   min-height: 42px;
   display: flex;
@@ -106,7 +110,7 @@ html body {
   padding: 8px 29px;
   cursor: pointer;
 }
-.rightSide .formContainer .socialLinks .googleBtn {
+.mainContainer .rightSide .formContainer .socialLinks .googleBtn {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -118,48 +122,57 @@ html body {
   padding: 8px 29px;
   cursor: pointer;
 }
-.rightSide .formContainer .contentWrapper {
+.mainContainer .rightSide .formContainer .contentWrapper {
   display: flex;
-  background-color: #424242;
   justify-content: center;
   align-items: center;
   gap: 5.5px;
-  color: rgba(255, 255, 255, 0.5411764706);
   font-family: "Open Sans", serif;
+  padding-bottom: 38.6px;
 }
-.rightSide .formContainer .contentWrapper .wrapper {
-  background-color: #ffffff;
-  max-width: 67px;
-  flex: 1;
+.mainContainer .rightSide .formContainer .contentWrapper .wrapper {
+  min-width: 67px;
   height: 1px;
+  background-color: black;
 }
-.rightSide .formContainer .usrInput {
+.mainContainer .rightSide .formContainer .usrInput {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 24px;
 }
-.rightSide .formContainer .usrInput .formBottom {
+.mainContainer .rightSide .formContainer .usrInput .usrData {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 8px;
+  padding-left: 30.88px;
+}
+.mainContainer .rightSide .formContainer .usrInput .usrData::-moz-placeholder {
+  font-family: "Montserrat", serif;
+}
+.mainContainer .rightSide .formContainer .usrInput .usrData::placeholder {
+  font-family: "Montserrat", serif;
+}
+.mainContainer .rightSide .formContainer .usrInput .formBottom {
   font-family: "Roboto", serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.rightSide .formContainer .usrInput .formBottom .bottomContainer {
+.mainContainer .rightSide .formContainer .usrInput .formBottom .bottomContainer {
   display: flex;
   gap: 12px;
 }
-.rightSide .formContainer .usrInput .formBottom a {
+.mainContainer .rightSide .formContainer .usrInput .formBottom a {
   text-decoration: none;
   color: #c5cae9;
 }
-.rightSide .formContainer .usrInput .formBottom span {
-  color: #ffffff;
-}
-.rightSide .formContainer .usrInput .formBtn {
+.mainContainer .rightSide .formContainer .usrInput .formBtn {
   display: flex;
   justify-content: center;
 }
-.rightSide .formContainer .usrInput .formBtn .submitBtn {
+.mainContainer .rightSide .formContainer .usrInput .formBtn .submitBtn {
   font-family: "Montserrat", serif;
   font-weight: 700;
   color: #ffffff;

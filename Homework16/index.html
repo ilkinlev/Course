@@ -26,10 +26,10 @@
   </head>
   <body>
     <main class="mainContainer">
+      <div class="homeImg">
+        <img src="icons/home.svg" alt="homeIcon" />
+      </div>
       <div class="leftSide">
-        <div>
-          <img src="icons/home.svg" alt="homeIcon" />
-        </div>
         <div class="leftSideContainer">
           <div>
             <img src="icons/mainlogo.svg" alt="mainLogo" class="mainLogo" />
@@ -41,67 +41,73 @@
           </div>
         </div>
       </div>
-      <div class="loginContainer">
-        <div class="rightSide">
-          <div class="formContainer">
-            <!-- Header terefi -->
-            <div class="formHeader">
-              <span class="logText">Login</span>
-              <span class="createText"
-                ><img src="icons/right.svg" alt="rightIcon" /><a
-                  href="Register.html"
-                  >Create new account</a
-                >
-              </span>
-            </div>
-            <!-- Sosial sebekeler -->
-            <div class="socialLinks">
-              <div>
-                <button class="facebookBtn">
-                  <img src="icons/facebook.svg" alt="facebooklogo" />Facebook
-                </button>
-              </div>
-              <div>
-                <button class="twitterBtn">
-                  <img src="icons/twitter.svg" alt="twitterlogo" />Twitter
-                </button>
-              </div>
-              <div>
-                <button class="googleBtn">
-                  <img src="icons/google.svg" alt="googlelogo" />Google
-                </button>
-              </div>
-            </div>
-            <div class="contentWrapper">
-              <div class="wrapper"></div>
-              <div><span class="wrapperText">Or login with email</span></div>
-              <div class="wrapper"></div>
-            </div>
-            <form class="usrInput">
-              <input
-                type="email"
-                name="usrEmail"
-                id="usrEmail"
-                placeholder="Email"
-              />
-              <input type="password" name="usrPass" id="usrPass" />
-              <div class="formBottom">
-                <div class="bottomContainer">
-                  <input
-                    type="checkbox"
-                    name="rememberMe"
-                    id="rememberMe"
-                    checked
-                  />
-                  <span>Remember</span>
-                </div>
-                <a href="#" class="forgotTxt">Forgot Password</a>
-              </div>
-              <div class="formBtn">
-                <input class="submitBtn" type="button" value="contiune" />
-              </div>
-            </form>
+      <div class="rightSide">
+        <div class="formContainer">
+          <!-- Header terefi -->
+          <div class="formHeader">
+            <span class="logText">Login</span>
+            <span class="createText"
+              ><img src="icons/right.svg" alt="rightIcon" /><a
+                href="Register.html"
+                >Create new account</a
+              >
+            </span>
           </div>
+          <!-- Sosial sebekeler -->
+          <div class="socialLinks">
+            <div>
+              <button class="facebookBtn">
+                <img src="icons/facebook.svg" alt="facebooklogo" />Facebook
+              </button>
+            </div>
+            <div>
+              <button class="twitterBtn">
+                <img src="icons/twitter.svg" alt="twitterlogo" />Twitter
+              </button>
+            </div>
+            <div>
+              <button class="googleBtn">
+                <img src="icons/google.svg" alt="googlelogo" />Google
+              </button>
+            </div>
+          </div>
+          <div class="contentWrapper">
+            <div class="wrapper"></div>
+            <div><span class="wrapperText">Or login with email</span></div>
+            <div class="wrapper"></div>
+          </div>
+          <form class="usrInput">
+            <input
+              type="email"
+              name="usrEmail"
+              id="usrEmail"
+              placeholder="Email"
+              class="usrData"
+            />
+            <input
+              type="password"
+              name="usrPass"
+              id="usrPass"
+              class="usrData"
+              placeholder="Password*"
+              style="border-color: #304ffe"
+            />
+            <div class="formBottom">
+              <div class="bottomContainer">
+                <input
+                  type="checkbox"
+                  name="rememberMe"
+                  id="rememberMe"
+                  checked
+                />
+                <span>Remember</span>
+              </div>
+              <a href="#" class="forgotTxt">Forgot Password</a>
+            </div>
+            <div class="formBtn">
+              <input class="submitBtn" type="button" value="contiune" />
+            </div>
+          </form>
         </div>
       </div>
     </main>
