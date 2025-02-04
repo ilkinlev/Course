@@ -6,10 +6,11 @@
 
 html body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background-color: #e91e63;
   background-image: url(../img/backgroundImgND.svg);
   background-image: url(../img/backgroundImg.svg);
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
 }
 
 .mainContainer {
@@ -167,4 +168,5 @@ html body {
   border-radius: 39px;
   min-width: 558px;
   padding: 14px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
