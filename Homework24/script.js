@@ -1,23 +1,37 @@
-let firstNumber = Number(prompt("Enter first number: "));
-let secondNumber = Number(prompt("Enter second number: "));
-let operation = prompt("Choose operation: ( +,  -,  *,  / ) ");
-
 do {
-  if (operation === "+") {
-    alert(`Operation result: ${firstNumber + secondNumber}`);
-    break;
-  } else if (operation === "-") {
-    alert(`Operation result: ${firstNumber - secondNumber}`);
-    break;
-  } else if (operation === "*") {
-    alert(`Operation result: ${firstNumber * secondNumber}`);
-    break;
-  } else if (operation === "/") {
-    alert(`Operation result: ${firstNumber / secondNumber}`);
-    break;
-  } else if (operation === null && operation === NaN) {
-    alert("Try again");
-  } else {
-    alert("Invalid operation");
+  let num1 = Number(prompt("Enter first number:"));
+  let num2 = Number(prompt("Enter second number:"));
+  let operation = prompt("Enter an operation (+, -, *, /):");
+
+  let result;
+
+  switch (operation) {
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      if (num2 === 0) {
+        alert("Error: Division by zero is not allowed!");
+        continue;
+      }
+      result = num1 / num2;
+      break;
+    default:
+      alert("Invalid operation! Enter valid operator");
+      continue;
   }
-} while (operation !== null);
+
+  alert(`Result: ${result}`);
+
+  var tryAgain = prompt(
+    "Do you want to calculate again? (yes/no):"
+  ).toLowerCase();
+} while (tryAgain === "yes");
+
+alert("Closing app...");
