@@ -28,10 +28,6 @@ do {
   }
 
   alert(`Result: ${result}`);
-
-  var tryAgain = prompt(
-    "Do you want to calculate again? (yes/no):"
-  ).toLowerCase();
-} while (tryAgain === "yes");
+} while (result);
 
 alert("Closing app...");
