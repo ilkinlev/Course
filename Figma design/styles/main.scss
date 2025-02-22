@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+.mainContainer {
+  .header {
+    display: flex;
+  }
+}
