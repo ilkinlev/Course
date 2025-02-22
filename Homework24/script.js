@@ -1,9 +1,12 @@
-do {
-  let num1 = Number(prompt("Enter first number:"));
-  let num2 = Number(prompt("Enter second number:"));
-  let operation = prompt("Enter an operation (+, -, *, /):");
+let num1, num2, operation, result;
 
-  let result;
+let isOpen = false;
+
+do {
+  num1 = Number(prompt("Enter first number:"));
+  num2 = Number(prompt("Enter second number:"));
+  operation = prompt("Enter an operation (+, -, *, /):");
+  isOpen = true;
 
   switch (operation) {
     case "+":
@@ -16,7 +19,7 @@ do {
       result = num1 * num2;
       break;
     case "/":
-      if (num2 === 0) {
+      if (num1 === 0 || num2 === 0) {
         alert("Error: Division by zero is not allowed!");
         continue;
       }
@@ -28,6 +31,4 @@ do {
   }
 
   alert(`Result: ${result}`);
-} while (result);
-
-alert("Closing app...");
+} while (isOpen);
